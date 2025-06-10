@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Police Amarendar Reddy | Data Analyst Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #121212;
+      background-image: url('https://www.transparenttextures.com/patterns/black-linen.png');
+      color: #e0e0e0;
+    }
+
+    a {
+      color: #00adb5;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
+      background-color: #1e1e1e;
+      padding: 3rem 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #ffffff;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #bbbbbb;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      margin-top: 1.5rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #00adb5;
+      border-left: 4px solid #00adb5;
+      padding-left: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background-color: #1f1f1f;
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid #2e2e2e;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 12px rgba(0, 173, 181, 0.4);
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #cccccc;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+
+    .resume-buttons {
+      margin-top: 1rem;
+    }
+
+    .resume-buttons a {
+      display: inline-block;
+      padding: 0.6rem 1rem;
+      background-color: #00adb5;
+      color: #fff;
+      border-radius: 5px;
+      margin-right: 1rem;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .resume-buttons a:hover {
+      background-color: #009ba4;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1e1e1e;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      .resume-buttons a {
+        display: block;
+        margin-bottom: 1rem;
+      }
+    }
+
+    #skills {
+      padding: 2rem;
+      color: #00adb5;
+    }
+
+    #skills h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #00adb5;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .skill-box {
+      padding: 0.8rem 1.5rem;
+      border-radius: 10px;
+      font-weight: bold;
+      color: #fff;
+      font-size: 1rem;
+      min-width: 140px;
+      text-align: center;
+      transition: transform 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .skill-box:hover {
+      transform: scale(1.05);
+    }
+
+    .python { background-color: #4B8BBE; }
+    .c-lang { background-color: #555; }
+    .sql { background-color: #f29111; }
+    .ml { background-color: #6a1b9a; }
+    .powerbi { background-color: #f2c811; color: #000; }
+    .excel { background-color: #217346; }
+    .frontend { background-color: #e44d26; }
+    .viz { background-color: #00acc1; }
+
+    /* ✅ New Contact Column Style */
+    .contact-columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .contact-column {
+      flex: 1 1 250px;
+      background-color: #1f1f1f;
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid #2e2e2e;
+    }
+
+    .contact-column h4 {
+      margin-bottom: 0.8rem;
+      color: #00adb5;
+    }
+
+    .contact-column p, .contact-column a {
+      color: #cccccc;
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>POLICE AMARENDAR REDDY</h1>
+    <p>Data Analyst | Python & SQL | AI Automation | BI Tools</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m an aspiring Data Analyst with a strong foundation in data visualization, Python programming, and AI-powered tools.
+        Through academic projects and personal initiatives, I’ve developed hands-on experience in turning raw data into clear, actionable insights.
+        I enjoy solving real-world problems using Excel, SQL, Power BI, and Python, and I’m especially interested in automation and AI applications in analytics.
+        Currently seeking opportunities to grow in the data analytics field and contribute meaningfully to data-driven decisions.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-box python">Python</div>
+        <div class="skill-box c-lang">C Language</div>
+        <div class="skill-box sql">SQL</div>
+        <div class="skill-box ml">Machine Learning</div>
+        <div class="skill-box powerbi">Power BI</div>
+        <div class="skill-box excel">Excel</div>
+        <div class="skill-box frontend">Frontend (HTML, CSS, JS)</div>
+        <div class="skill-box viz">Data Visualization</div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Bachelor of Technology in Computer Science(Data Science)</strong> 
+            – TKR College Of Engineering and Technology (2022–2026)</li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Python certificate in Codesoft</li>
+        <li>SQL certificate in HackerRank</li>
+        <li>HP Certified: Python and Power BI</li>
+        <li>Career Essentials in GitHub Professional Certificate</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3><a href="https://github.com/yourusername/virtual-ai-assistant" target="_blank">Virtual AI Assistant</a></h3>
+          <p>Automates data cleaning, reporting, and dashboard creation using OpenAI, Streamlit, and Pandas.</p>
+        </div>
+        <div class="project-card">
+          <h3><a href="https://github.com/yourusername/ai-job-applier" target="_blank">AI Job Applier</a></h3>
+          <p>Script that finds job posts, analyzes requirements, and submits applications with GPT-based automation.</p>
+        </div>
+        <div class="project-card">
+          <h3><a href="https://github.com/yourusername/bi-dashboard" target="_blank">Sales Analytics BI Dashboard</a></h3>
+          <p>Power BI dashboard for sales trends, KPIs, and regional insights. Built using real-world data and DAX.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:amarendarreddypolice9100@gmail.com">amarendarreddypolice9100@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/police-amarendar-reddy-a237462a8/" target="_blank">linkedin.com/in/policeamarendarreddy</a></p>
+      <p>GitHub: <a href="https://github.com/Amar" target="_blank">github.com/Amar</a></p>
+      <div class="resume-buttons">
+        <a href="AmarendarResume.pdf" download>Download Resume</a>
+        <a href="AmarendarResume.pdf" target="_blank">View Resume</a>
+      </div>
+
+      <!-- ✅ Contact Columns Section -->
+      <div class="contact-columns">
+        <div class="contact-column">
+          <h4>Phone</h4>
+          <p>+91-9100586713</p>
+        </div>
+        <div class="contact-column">
+          <h4>Location</h4>
+          <p>Hyderabad, Telangana, India</p>
+        </div>
+        <div class="contact-column">
+          <h4>Social</h4>
+          <a href="https://www.linkedin.com/in/police-amarendar-reddy-a237462a8/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Amar" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Police Amarendar Reddy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
