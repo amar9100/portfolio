@@ -1,4 +1,6 @@
-# POLICE AMARENDAR REDDY - Data Analyst Portfolio
+git remote add origin https://github.com/amar9100/portfolio.git
+git branch -M main
+git push -u origin main# POLICE AMARENDAR REDDY - Data Analyst Portfolio
 
 A professional, modern portfolio showcasing my expertise in data analytics, SQL, Python, and business intelligence tools.
 
